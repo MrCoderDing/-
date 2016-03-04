@@ -1,0 +1,121 @@
+//
+//  ShoppingPrefixHeader.pch
+//  ShoppingAPP
+//
+//  Created by qianfeng on 16/2/15.
+//  Copyright (c) 2016年 JC. All rights reserved.
+//
+
+#ifndef ShoppingAPP_ShoppingPrefixHeader_pch
+#define ShoppingAPP_ShoppingPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+//友盟appkey
+#define YouMeng_KEY @"56cc06aae0f55a9b8c000cfb"
+
+
+//设备model
+#define DEVICE_MODEL [UIDevice currentDevice].model
+
+//设备号
+#define DEVICE_ID [UIDevice currentDevice].identifierForVendor.UUIDString
+
+/**
+ *  屏幕大小
+ */
+#define SCREEN_SIZE [[UIScreen mainScreen] bounds]
+#define SCREEN_SIZE_WIDTH SCREEN_SIZE.size.width
+#define SCREEN_SIZE_HEIGHT SCREEN_SIZE.size.height
+
+
+//statusBarStyle
+#define STATUS_BAR_STYLE UIStatusBarStyleLightContent
+
+//懒定义
+#define WString(x) @property(nonatomic,copy)NSString *x
+#define WArray(x) @property(nonatomic,strong)NSArray *x
+
+
+//Nav Bar 高度
+#define BAR_NAV_HEIGHT 0
+#define BAR_HEIGHT 64
+#define BAR_TOOL_HEIGHT 40
+//按钮字体大小
+#define MIN_MENU_FONT  13.f
+#define MAX_MENU_FONT  16.f
+
+//滚动标题高度
+#define TITLE_BAR_HEIGHT 35.f
+
+//2_Shoping 滚动标题按键高度
+#define BUTTON_WIDTH  70
+
+
+//滚动广告高度
+#define ADDS_HEIGHT 150.f
+/**
+ *  主色调
+ */
+#define COLOR [UIColor colorWithRed:253/255.0 green:99/255.0 blue:99/255.0 alpha:1]
+#define RGBA(R/*红*/, G/*绿*/, B/*蓝*/, A/*透明*/) \
+[UIColor colorWithRed:R/255.f green:G/255.f blue:B/255.f alpha:A]
+
+//weakSelf
+#define WeakSelf(x) __weak typeof(*&self)x=self
+
+//LoadingView TAG
+#define LoadingView_TAG 888
+
+//app目录
+#define DOCUMENT_PATH NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]
+#define CACHES_PATH NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]
+
+
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+/*=======================================API=========================================*/
+/**
+ *  广告页 get
+ *
+ */
+#define ADS_API @"http://cloud.repaiapp.com/yunying/spzt.php?app_id=1664340785&app_oid=d19920d2a8a8ec00fdc19e490b5332e4&app_version=1.0&app_channel=iphoneappstore&shce=boluomi"
+/**
+ * 商品列表  GET
+ * page 页数 limit 默认100
+ */
+#define GOOD_API @"http://zhekou.repai.com/jkjby/view/rp_b2c_list_v1.php?page=%@&limit=100&appkey=100002&app_oid=742ac2a1d08924a65e4f3a1a9af27f30&app_id=1338599900&app_version=2.6&app_channel=iphoneappstore&shce"
+//老接口:http://zhekou.repaiapp.com/shop/discount/api/list.php?app_id=1664340785&app_oid=d19920d2a8a8ec00fdc19e490b5332e4&app_version=1.0&app_channel=iphoneappstore&shce=boluomi
+
+/**
+ *  商品分类  GET
+ *  cid 类别 page 页数
+ *  4 丽人馆
+ */
+#define GOOD_CATEGORY_API @"http://zhekou.repai.com/jkjby/view/rp_b2c_category_list.php?cid=%@&access_token=(null)&appkey=100071&app_oid=742ac2a1d08924a65e4f3a1a9af27f30&app_id=1338599900&app_version=2.6&app_channel=iphoneappstore&shce=sdsdad&pay=weixin&senddata=20150922&collect_pay=1&page=%@&limit=100&type=1"
+//老接口: 淘宝宝贝入口,分类已经全乱,无人管理
+//http://zhekou.repaiapp.com/shop/discount/api/list.php?app_id=1664340785&app_oid=d19920d2a8a8ec00fdc19e490b5332e4&app_version=1.0&app_channel=iphoneappstore&shce=boluomi&sort=%@
+
+/**
+ * 主题馆
+ * tabId 主题号 -1 ~ 10
+ * page   页码
+ */
+#define SHOPPING_API @"http://zhekou.repai.com/lws/wangyu/index.php?control=tm&model=ws&tabId=%@&page=1&app_id=1664340785&app_oid=d19920d2a8a8ec00fdc19e490b5332e4&app_version=1.0&app_channel=iphoneappstore&shce=boluomi"
+/**
+ *  主题馆详情
+ *  id  topicContentId
+ *  title 标题文字转码
+ */
+#define SHOPING_API_DETAIL @"http://zhekou.repai.com/lws/wangyu/index.php?control=tianmao&model=get_sec_ten_two_view&id=%@&title=%@"
+
+
+//http://zhekou.repai.com/jkjby/view/rp_b2c_list_v2.php?&access_token=rpat_db370705ad3b84eaf26e5e0d27e05b95&appkey=100071&app_oid=742ac2a1d08924a65e4f3a1a9af27f30&app_id=1338599900&app_version=2.6&app_channel=iphoneappstore&shce=sdsdad&pay=weixin&senddata=20150922&collect_pay=1

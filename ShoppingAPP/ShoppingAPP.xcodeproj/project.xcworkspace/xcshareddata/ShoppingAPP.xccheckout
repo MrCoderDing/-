@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CF5183B5-69ED-4675-8201-E77E336D9ECA</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>d1bd883b-ac27-46ce-ae37-3c61df1bee63++9938</key>
+		<string>http://t.svnchina.com/svn/tuzhu/TuZhu/TuZhu/TuZhu/ThreeFramework/MJRefresh</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>d1bd883b-ac27-46ce-ae37-3c61df1bee63++9938</key>
+		<string>MJRefresh/</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>d1bd883b-ac27-46ce-ae37-3c61df1bee63++9938</key>
+		<string>http://t.svnchina.com/svn/tuzhu</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://t.svnchina.com/svn/tuzhu/TuZhu/TuZhu/TuZhu/ThreeFramework/MJRefresh</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>d1bd883b-ac27-46ce-ae37-3c61df1bee63++9938</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>d1bd883b-ac27-46ce-ae37-3c61df1bee63++9938</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MJRefresh</string>
+		</dict>
+	</array>
+</dict>
+</plist>
